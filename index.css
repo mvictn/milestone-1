@@ -1,17 +1,3 @@
-:root{
-    --hue-neutral: 200;
-}
-body {
---hue: var(--hue-neutral);
- background-color: hsl(var(--hue), 100%, 30%);
- padding: 0;
- margin: 0;
- display: flex;
- justify-content: center;
- align-items: center;
- width: 100vw ;
- height: 100vh;
-}
 .first-slide{
     color: black;
     text-align: center;
@@ -25,8 +11,11 @@ body {
     border-radius: 7px;
     font-size: 2rem;
     font-weight: bold;
-    padding: 10px 20px;
-    background-color: white;
+    padding: 5px 10px;
+    background-color: green;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
 }
 
 .b-1{
