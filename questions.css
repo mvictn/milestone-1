@@ -34,11 +34,12 @@ body{
     box-shadow: 0 0 10px 2px;
     margin-top: 10px;
 }
-.next.btn{
-    font-size: 1.4rem;
+.start-btn, .next-btn {
+    font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
-}
+  }
+  
 .control{
     display: flex;
     justify-content: center;
@@ -68,3 +69,12 @@ body{
 .btn.wrong{
     --hue: var(--hue-wrong);
 }
+.hide{
+    display: none;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
