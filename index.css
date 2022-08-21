@@ -12,12 +12,15 @@
     font-size: 2rem;
     font-weight: bold;
     padding: 5px 10px;
-    background-color: green;
+    background-color: #33cc33;
     border: 2px solid black;
     text-decoration: none;
     color: black;
+    transition: box-shadow 0.5s;
 }
-
+#start-btn:active{
+    background-color: #004d00;
+}
 .b-1{
     color: rgb(241, 181, 26);
 }

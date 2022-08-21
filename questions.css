@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 :root{
     --hue-neutral: 200;
     --hue-correct: 145;
