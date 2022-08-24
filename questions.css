@@ -78,3 +78,61 @@ body{
     justify-content: center;
     align-items: center;
   }
+  .luck{
+    color: white;
+    justify-content: center;
+    text-align: center;
+    position:fixed;
+    top: 200px;
+    font-size: 100px;
+  }
+#one{
+    color:red;
+    
+}
+#two{
+    color:orange;
+    padding-top: 30px;
+}
+#three{
+    color:yellow;
+}
+#four{
+    color:green;
+}
+#five{
+    color:lightblue;
+}
+#six{
+    color:indigo;
+}
+#seven{
+    color:violet;
+}
+#eight{
+    color: lightcoral;
+}
+#one:hover{
+    color:lightcoral;
+}
+#two:hover{
+    color:violet;
+}
+#three:hover{
+    color:indigo;
+}
+#four:hover{
+    color:lightblue;
+}
+#five:hover{
+    color:green;
+}
+#six:hover{
+    color:yellow;
+}
+#seven:hover{
+    color:orange;
+}
+#eight:hover{
+    color: red;
+}

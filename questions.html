@@ -6,8 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questions</title>
     <link rel="stylesheet" href="./questions.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
 </head>
 <body>
+  <h1 class="luck" id="hide">
+    <b id="one">G</b>
+    <b id="two">O</b>
+    <b id="three">O</b>
+    <b id="four">D</b>
+    <b id="five">L</b>
+    <b id="six">U</b>
+    <b id="seven">C</b>
+    <b id="eight">K</b>
+  </h1>
     <div class="container">
       <div id="question-container" class="hide">
         <div id="question">Question</div>
@@ -23,6 +34,25 @@
         <button id="next-btn" class="next-btn btn hide">Next</button>
       </div>
     </div>
+    <script>
+      const jsConfetti = new JSConfetti()
+      function confettiFY(){
+          jsConfetti.addConfetti({
+confettiColors: [
+'#ff0a54', 
+'#ff477e', 
+'#ff7096', 
+'#ff85a1',
+'#fbb1bd',
+'#f9bec7',
+],
+confettiRadius: 6,
+confettiNumber: 750
+})
+      }
+      document.querySelector('.start-btn').addEventListener
+      ('click',confettiFY)
+  </script>
   </body>
 <script src="./index.js"></script>
 </html>

@@ -3,6 +3,7 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
+const hideText = document.querySelector('luck')
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -11,7 +12,9 @@ nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
 })
+function hideLuck(){
 
+}
 function startGame() {
   startButton.classList.add('hide')
   shuffledQuestions = questions.sort(() => Math.random() - .5)
@@ -98,7 +101,7 @@ const questions = [
   {
     question: 'How many legs does a spider have?',
     answers: [
-      { text: 'Spiders dont have legs', correct: false },
+      { text: '0', correct: false },
       { text: '8', correct: true },
       { text: '7', correct: false },
       { text: '9', correct: false }
@@ -177,3 +180,5 @@ const questions = [
     ]
   }
 ]
+
+
