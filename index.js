@@ -78,35 +78,102 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What is 2 + 2?',
+    question: 'What is Earths largest continent?',
     answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false }
+      { text: 'Asia', correct: true },
+      { text: 'North America', correct: false},
+      { text: 'Europe' ,correct: false},
+      { text: 'Antartica' ,correct: false}
     ]
   },
   {
-    question: 'Who is the best YouTuber?',
+    question: 'How many hearts does an octopus have?',
     answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
+      { text: '3', correct: true },
+      { text: '8', correct: false },
+      { text: '1', correct: false },
+      { text: '2', correct: false }
     ]
   },
   {
-    question: 'Is web development fun?',
+    question: 'How many legs does a spider have?',
     answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: true },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: false }
+      { text: 'Spiders dont have legs', correct: false },
+      { text: '8', correct: true },
+      { text: '7', correct: false },
+      { text: '9', correct: false }
     ]
   },
   {
-    question: 'What is 4 * 2?',
+    question: 'What is the nearest planet to the sun?',
     answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true }
+      { text: 'Mars', correct: false },
+      { text: 'Mercury', correct: true },
+      { text: 'Venus', correct: false },
+      { text: 'Uranus', correct: false }
+    ]
+  },
+  {
+    question: 'How many teeth does an adult human have?',
+    answers: [
+      { text: '70', correct: false },
+      { text: '32', correct: true },
+      { text: '64', correct: false },
+      { text: '26', correct: false }
+    ]
+  },
+  {
+    question: 'Who was the second president of the United States?',
+    answers: [
+      { text: 'George Washington', correct: false },
+      { text: 'John Adams', correct: true },
+      { text: 'James Madison', correct: false },
+      { text: 'James Monroe', correct: false }
+    ]
+  },
+  {
+    question: 'What country touches the Indian Ocean, the Arabian Sea, and the Bay of Bengal?',
+    answers: [
+      { text: 'Australia', correct: false },
+      { text: 'Africa', correct: false },
+      { text: 'India', correct: true },
+      { text: 'France', correct: false }
+    ]
+  },
+  {
+    question: 'Which Central American country has a name which translates to English as “The Saviour”?',
+    answers: [
+      { text: 'El Salvador', correct: true },
+      { text: 'Mexico', correct: false },
+      { text: 'Costa Rica', correct: false },
+      { text: 'Guatemala', correct: false }
+    ]
+  },
+  {
+    question: 'The name of which African animal means "river horse"?',
+    answers: [
+      { text: 'River Horse', correct: false },
+      { text: 'Hippo', correct: true },
+      { text: 'Seahorse', correct: false },
+      { text: 'Crocodiles', correct: false }
+    ]
+  },
+  {
+    question: 'What is the opposite of matter?',
+    answers: [
+      { text: 'Non-matter', correct: false },
+      { text: 'Antimatter', correct: true },
+      { text: 'Unmatter', correct: false },
+      { text: 'No Matter', correct: false }
+    ]
+  },
+  {
+    question: 'In what type of matter are atoms most tightly packed?',
+    answers: [
+      { text: 'Liquid', correct: false },
+      { text: 'Gas', correct: false },
+      { text: 'Plasma', correct: false },
+      { text: 'Solids', correct: true }
     ]
   }
 ]
