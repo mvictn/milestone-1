@@ -5,8 +5,8 @@ const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 const hideText = document.querySelector('luck')
 
-let shuffledQuestions, currentQuestionIndex
 
+let shuffledQuestions, currentQuestionIndex
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
@@ -181,4 +181,16 @@ const questions = [
   }
 ]
 
-
+function move() {
+  const element = document.getElementById("myBar");   
+  let width = 0;
+  const id = setInterval(frame, 110);
+  function frame() {
+    if (width == 42) {
+      clearInterval(id);
+    } else {
+      width++; 
+      element.style.width = width + '%'; 
+    }
+  }
+}

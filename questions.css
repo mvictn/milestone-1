@@ -136,3 +136,46 @@ body{
 #eight:hover{
     color: red;
 }
+#timer{
+    --hur: var(--hue-neutral);
+    background-color: hsl(var(--hue), 100%, 50%);
+    color:white;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    position:fixed;
+    bottom: 350px;
+}
+#myProgress {
+    width: 42%;
+    height: 30px;
+    position: relative;
+    background-color: #ddd;
+    justify-content: center;
+    text-align: center;
+    position:fixed;
+    bottom: 350px;
+  }
+  
+  #myBar {
+    background-color: #4CAF50;
+    width: 10px;
+    height: 30px;
+    position: absolute;
+    color:white;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    position:fixed;
+    bottom: 350px;
+  }
+  .click{
+    --hur: var(--hue-neutral);
+    background-color: hsl(var(--hue), 100%, 50%);
+    color:white;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    position:fixed;
+    bottom: 320px;
+  }

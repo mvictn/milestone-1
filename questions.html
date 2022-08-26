@@ -39,12 +39,12 @@
       function confettiFY(){
           jsConfetti.addConfetti({
 confettiColors: [
-'#ff0a54', 
-'#ff477e', 
-'#ff7096', 
-'#ff85a1',
-'#fbb1bd',
-'#f9bec7',
+'#009933', 
+'#00cc00', 
+'#00cc66', 
+'#99ff99',
+'#003300',
+'#3399ff',
 ],
 confettiRadius: 6,
 confettiNumber: 750
@@ -53,6 +53,12 @@ confettiNumber: 750
       document.querySelector('.start-btn').addEventListener
       ('click',confettiFY)
   </script>
+ <div id="myProgress">
+   <div id="myBar"></div>
+ </div>
+ 
+ <br>
+ <button class="click" onclick="move()">START TIMER</button> 
   </body>
 <script src="./index.js"></script>
 </html>
