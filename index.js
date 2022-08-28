@@ -5,16 +5,12 @@ const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 const hideText = document.querySelector('luck')
 
-
-let shuffledQuestions, currentQuestionIndex
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
 })
-function hideLuck(){
 
-}
 function startGame() {
   startButton.classList.add('hide')
   shuffledQuestions = questions.sort(() => Math.random() - .5)
@@ -27,6 +23,10 @@ function setNextQuestion() {
   resetState()
   showQuestion(shuffledQuestions[currentQuestionIndex])
 }
+
+/* getting the questions from the array */
+
+let shuffledQuestions, currentQuestionIndex
 
 function showQuestion(question) {
   questionElement.innerText = question.question
@@ -42,6 +42,8 @@ function showQuestion(question) {
   })
 }
 
+/*reset and hides the next button until question is answered */
+
 function resetState() {
   clearStatusClass(document.body)
   nextButton.classList.add('hide')
@@ -49,6 +51,8 @@ function resetState() {
     answerButtonsElement.removeChild(answerButtonsElement.firstChild)
   }
 }
+
+/* checks if the question is wrong or correct */
 
 function selectAnswer(e) {
   const selectedButton = e.target
@@ -65,6 +69,8 @@ function selectAnswer(e) {
   }
 }
 
+/* what the selectAnswer function pulls from */
+
 function setStatusClass(element, correct) {
   clearStatusClass(element)
   if (correct) {
@@ -74,10 +80,14 @@ function setStatusClass(element, correct) {
   }
 }
 
+/*removes the classes that were set on setStatusClass*/
+
 function clearStatusClass(element) {
   element.classList.remove('correct')
   element.classList.remove('wrong')
 }
+
+/* questions go here*/
 
 const questions = [
   {
@@ -180,6 +190,8 @@ const questions = [
     ]
   }
 ]
+
+/*timer*/ 
 
 function move() {
   const element = document.getElementById("myBar");   

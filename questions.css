@@ -8,12 +8,6 @@
     --hue-correct: 145;
     --hue-wrong: 0;
 }
-body.correct{
-    --hue: var(var(--hue-correct))
-}
-body.wrong{
-    --hue: var(var(--hue-wrong))
-}
 body{
     --hue: var(--hue-neutral);
     padding: 0;
@@ -92,7 +86,6 @@ body{
 }
 #two{
     color:orange;
-    padding-top: 30px;
 }
 #three{
     color:yellow;
@@ -110,7 +103,7 @@ body{
     color:violet;
 }
 #eight{
-    color: lightcoral;
+    color:lightcoral;
 }
 #one:hover{
     color:lightcoral;
@@ -143,7 +136,7 @@ body{
     color: white;
     justify-content: center;
     text-align: center;
-    position:fixed;
+    position:relative;
     bottom: 350px;
 }
 #myProgress {
